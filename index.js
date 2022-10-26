@@ -29,7 +29,6 @@ function gamestart() {
     mySound=new sound("snake.mp3");
 }
 
-
 document.addEventListener('keyup', (e) => {
     if (e.key == 'ArrowRight' && e.key != 'ArrowLaft') {
         dir = 'right';
@@ -64,9 +63,6 @@ function sound(src) {
     }    
 }
 
-
-
-mySound=new sound("snake.mp3");
 function add() {
     lastball = balls[balls.length - 1];
     if (dir == 'right') {
